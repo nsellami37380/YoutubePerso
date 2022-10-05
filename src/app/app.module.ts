@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { SearchComponent } from './search/search.component';
 import { VideoDetailComponent } from './video-detail/video-detail.component';
 import { CategoryComponent } from './category/category.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CategoryComponent } from './category/category.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
